@@ -16,7 +16,7 @@ def create_custom_hn(link, votes):
         hn.append({'title': title, 'links':href})
         if len(vote):
             points = int(vote[0].getText().replace())
-            if ponts > 99:
+            if ponts > 100:
                 hn.append({'title' : title, 'link': href, 'votes':ponts })
     return sort_by_votes(hn)
 
